@@ -21,3 +21,5 @@ describe("Add items on cart", () => {
         expect(cart.items[1].quantity).toBe(1)
     })
 })
+
+module.exports = { Cart }
