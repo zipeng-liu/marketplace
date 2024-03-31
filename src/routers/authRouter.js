@@ -1,14 +1,14 @@
 import express from 'express';
 const router = express.Router();
 
-router.get('/', (req, res) => {
+router.get('/login', (req, res) => {
   res.render('login.ejs');
 });
 
-router.post('/', (req, res) => {
+router.post('/login', (req, res) => {
   const { username, password } = req.body;
-  // Perform login logic here
   res.send(`Login successful! Welcome, ${username}!`);
 });
 
 export default router;
+   
